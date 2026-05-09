@@ -35,6 +35,7 @@ export default function LandingPage() {
               src="https://res.cloudinary.com/dregnmagh/image/upload/v1778060747/ChatGPT_Image_May_6_2026_03_15_09_PM_uuieol.png"
               alt="Sacred Stillness"
               fill
+              loading="eager"
               className="object-cover opacity-60 transition-transform duration-[20s] hover:scale-110"
               priority
             />
@@ -48,11 +49,11 @@ export default function LandingPage() {
               variants={staggerContainer}
               className="mx-auto max-w-4xl"
             >
-              <motion.h1 variants={fadeUp} className="mb-8 font-serif text-5xl font-medium leading-tight md:text-7xl lg:text-8xl">
+              <motion.h1 variants={fadeUp} className="mb-8 font-serif text-4xl font-medium leading-tight md:text-6xl">
                 You are not your thoughts.<br />
                 <span className="italic text-gold">You are the one aware of them.</span>
               </motion.h1>
-              <motion.p variants={fadeUp} className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-charcoal/70 md:text-xl">
+              <motion.p variants={fadeUp} className="mx-auto mb-12 max-w-2xl text-md leading-relaxed text-charcoal/70 md:text-xl">
                 An ancient Tamil Siddhar approach to understanding the mind—<br className="hidden md:block"/>
                 lived today in a traditional Gurukulam.
                 <br /><br />
