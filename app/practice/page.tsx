@@ -148,7 +148,7 @@ export default function PracticePage() {
               The practice is simple, but the journey is profound. Apply to visit our 
               Gurukulam for deeper residential guidance.
             </p>
-            <Link href="/visit">
+            <Link href="https://www.aadhivithai.org/form.html" target="blank">
               <Button size="lg">Apply for Residential Learning</Button>
             </Link>
           </div>

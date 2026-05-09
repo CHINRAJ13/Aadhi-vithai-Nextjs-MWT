@@ -58,7 +58,7 @@ export const Navbar = () => {
             <Languages size={18} />
             <span>EN</span>
           </button>
-          <Link href="/visit">
+          <Link href="https://www.aadhivithai.org/form.html" target="black">
             <Button size="sm">Apply to Visit</Button>
           </Link>
         </div>
