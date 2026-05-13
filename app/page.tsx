@@ -1,10 +1,11 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
+import { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/Button";
-import { ArrowRight, Check, X } from "lucide-react";
+import { ArrowRight, Check, X, Volume2, VolumeX } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -23,6 +24,8 @@ const staggerContainer: Variants = {
 };
 
 export default function LandingPage() {
+  const [isMuted, setIsMuted] = useState(true);
+
   return (
     <div className="relative flex min-h-screen flex-col bg-white overflow-hidden text-charcoal">
       <Navbar />
@@ -87,15 +90,21 @@ export default function LandingPage() {
                 transition={{ duration: 1 }}
                 className="relative aspect-[3/2] overflow-hidden rounded-2xl"
               >
-                <Image
-                  src="https://res.cloudinary.com/dregnmagh/image/upload/v1778058773/ChatGPT_Image_May_6_2026_02_33_44_PM_os91wd.png"
-                  alt="Human reflection"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-[8s] h-[80vh] w-[50vw] hover:scale-105"
+                <video
+                  src="https://res.cloudinary.com/dregnmagh/video/upload/v1778145055/WhatsApp_Video_2026-05-07_at_2.27.03_PM_c3ntm3.mp4"
+                  autoPlay
+                  loop
+                  muted={isMuted}
+                  playsInline
+                  className="h-full w-full object-cover transition-transform duration-[8s] hover:scale-105"
                 />
-                {/* <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-charcoal/20" />
-                <div className="absolute -top-[1px] -right-[1px] w-20 h-20 border-t border-r border-gold/40 z-10"></div> */}
+                <button
+                  onClick={() => setIsMuted(!isMuted)}
+                  className="absolute bottom-4 right-4 z-20 rounded-full bg-black/40 p-2 text-white backdrop-blur-sm hover:bg-black/60 transition-all border border-white/10"
+                  aria-label={isMuted ? "Unmute" : "Mute"}
+                >
+                  {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
+                </button>
               </motion.div>
               
               <motion.div
