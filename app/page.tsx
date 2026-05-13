@@ -35,6 +35,7 @@ export default function LandingPage() {
               src="https://res.cloudinary.com/dregnmagh/image/upload/v1778060747/ChatGPT_Image_May_6_2026_03_15_09_PM_uuieol.png"
               alt="Sacred Stillness"
               fill
+              sizes="100vw"
               loading="eager"
               className="object-cover opacity-60 transition-transform duration-[20s] hover:scale-110"
               priority
@@ -90,6 +91,7 @@ export default function LandingPage() {
                   src="https://res.cloudinary.com/dregnmagh/image/upload/v1778058773/ChatGPT_Image_May_6_2026_02_33_44_PM_os91wd.png"
                   alt="Human reflection"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-[8s] h-[80vh] w-[50vw] hover:scale-105"
                 />
                 {/* <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-charcoal/20" />
@@ -126,6 +128,7 @@ export default function LandingPage() {
               src="https://res.cloudinary.com/dregnmagh/image/upload/v1778061257/8db63f6b-568f-4680-b816-24cbbc620f18_djunkc.png"
               alt="Clarity"
               fill
+              sizes="100vw"
               className="object-cover opacity-30"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/80 to-charcoal" />
@@ -479,13 +482,13 @@ export default function LandingPage() {
             {/* Masonry-style Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
               <div className="relative aspect-[4/3] md:col-span-2 md:row-span-2 overflow-hidden rounded-lg">
-                <Image src="/images/gurukulam.png" alt="Gurukulam" fill className="object-cover" />
+                <Image src="/images/gurukulam.png" alt="Gurukulam" fill sizes="(max-width: 768px) 100vw, 66vw" className="object-cover" />
               </div>
               <div className="relative aspect-square overflow-hidden rounded-lg">
-                <Image src="https://res.cloudinary.com/dregnmagh/image/upload/v1778061677/ChatGPT_Image_May_6_2026_03_30_47_PM_nkgl1a.png" alt="Daily Practice" fill className="object-cover" />
+                <Image src="https://res.cloudinary.com/dregnmagh/image/upload/v1778061677/ChatGPT_Image_May_6_2026_03_30_47_PM_nkgl1a.png" alt="Daily Practice" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
               </div>
               <div className="relative aspect-square overflow-hidden rounded-lg">
-                <Image src="/images/practice.png" alt="Students" fill className="object-cover" />
+                <Image src="/images/practice.png" alt="Students" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
               </div>
             </div>
 
